@@ -1,0 +1,27 @@
+<template>
+  <div class="home">
+   <CustomText>Selam</CustomText>
+   <CustomText class="a1" tag="p">Selam</CustomText>
+   <CustomText tag="p" size="small">Selam</CustomText>
+   <CustomText tag="p" size="xsmall">Selam</CustomText>
+   <CustomText tag="p" size="xxsmall">Selam</CustomText>
+  </div>
+</template>
+
+<script>
+// @ is an alias to /src
+import CustomText from '@/components/CustomText'
+
+export default {
+  name: "Home",
+  components:{
+    CustomText
+  }
+};
+</script>
+
+<style>
+.a1{
+  color: rgb(var(--ba8));
+}
+</style>
